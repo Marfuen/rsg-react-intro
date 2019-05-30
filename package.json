@@ -30,6 +30,7 @@
     "start": "node server.js",
     "postinstall": "npm run webpack",
     "webpack": "webpack",
+    "nodemon:dev": "nodemon server.js --ignore src/ --ignore dist/",
     "webpack:dev": "npm run webpack -- --mode=development --watch",
     "start:dev": "npm run webpack:dev & nodemon server.js --ignore src/ --ignore dist/"
   },
